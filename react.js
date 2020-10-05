@@ -1,7 +1,7 @@
 class Hello extends React.Component{
     render() {
         return (
-            <h1>Hello!</h1>
+            <h1>Hello, {this.props.name}</h1>
         );
     }
 }
@@ -10,10 +10,9 @@ class App extends React.Component{
     render(){
         return (
             <div>
-                <Hello />
-                <Hello />
-                <Hello />
-                
+                <Hello name="Harry"/>
+                <Hello name="Ron" />
+                <Hello name="Hermione"/>
                 <p>Welcome</p>
             </div>
         );
