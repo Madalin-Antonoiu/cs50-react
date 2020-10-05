@@ -1,15 +1,26 @@
-// Step1 - Everything starts with defining a React "component", which is esentially a JavaScript Class
+class Hello extends React.Component{
+    render() {
+        return (
+            <h1>Hello!</h1>
+        );
+    }
+}
+
 class App extends React.Component{
     render(){
         return (
             <div>
-                <h1>Welcome!</h1>
-                <p>Hello</p>
+                <Hello />
+                <Hello />
+                <Hello />
+                
+                <p>Welcome</p>
             </div>
         );
     }
     
 }
 
-// Now that i have this components, let`s render it into DOM
+
+
 ReactDOM.render(<App />, document.querySelector("#app"));
