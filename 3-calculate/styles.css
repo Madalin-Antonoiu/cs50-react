@@ -1,0 +1,18 @@
+body {
+    background: #D3D3D3;
+   
+}
+
+#app{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#problem{
+    font-size: 220%;
+}
+
+#winner{
+    font-size: 220%;
+    color: green;
+}
